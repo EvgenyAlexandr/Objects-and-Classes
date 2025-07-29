@@ -21,5 +21,6 @@ public class Main {
         book2.setPublicationYear(1846);
         System.out.println("Обновленный год публикации для " + book2.getTitle()  + ": " + book2.getPublicationYear());
 
+
     }
 }
