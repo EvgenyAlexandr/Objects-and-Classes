@@ -17,10 +17,12 @@ public class Author {
         return lastName;
     }
 
+    @Override
     public String toString() {
         return firstName + " " + lastName;
     }
 
+    @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
@@ -29,6 +31,7 @@ public class Author {
                 Objects.equals(lastName, author.lastName);
     }
 
+    @Override
     public int hashCode() {
         return Objects.hash(firstName, lastName);
     }
